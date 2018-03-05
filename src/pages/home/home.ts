@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  signIn(): void{
+  	this.navCtrl.push('DashboardPage');
+  }
+
 }
