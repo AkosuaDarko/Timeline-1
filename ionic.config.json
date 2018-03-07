@@ -1,8 +1,0 @@
-{
-  "name": "Nyamekye",
-  "app_id": "fbcd41f3",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
-}
