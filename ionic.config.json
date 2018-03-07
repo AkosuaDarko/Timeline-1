@@ -1,0 +1,8 @@
+{
+  "name": "TimeLine",
+  "app_id": "2c1d4d33",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
