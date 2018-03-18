@@ -4,6 +4,9 @@ import { HomePage } from '../home/home';
 import { AdminHomePage } from '../admin-home/admin-home';
 import { TeamsPage } from '../teams/teams';
 import { ProjectsPage } from '../projects/projects';
+import { ModalController } from 'ionic-angular';
+import { AddUserPage } from '../add-user/add-user';
+
 /**
  * Generated class for the UsersPage page.
  *
@@ -14,15 +17,20 @@ import { ProjectsPage } from '../projects/projects';
 @IonicPage()
 @Component({
   selector: 'page-users',
-  templateUrl: 'users.html',
+  templateUrl: 'users.html', 
 })
 export class UsersPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public modalCtrl: ModalController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsersPage');
+  }
+
+   newUser() {
+    let modal = this.modalCtrl.create(AddUserPage);
+    modal.present();
   }
 
   signOut(): void {
