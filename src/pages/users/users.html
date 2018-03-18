@@ -33,11 +33,69 @@
   
   <ion-content>
     <div id="content">
+      <table>
+        <thead>
+
+          <tr>
+
+              <th>ID</th>
+
+              <th>Firstname</th>
+
+              <th>Lastname</th>
+
+              <th>Department</th>
+
+              <th>Position</th>
+
+              <th>Date Employed</th>
+
+              <th></th>
+
+          </tr>
+
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td>1</td>
+              <td>Sels</td>
+              <td>Gborgs</td>
+              <td>Finance</td>
+              <td>Labourer</td>
+              <td>2009-01-05</td>
+              <td>
+                <ion-list>
+                  <ion-item-sliding>
+                    <ion-item>
+                        <ion-icon name="more"></ion-icon>
+                    </ion-item>
+                    <ion-item-options side="right">
+                        <button id="ed" ion-button (click)="edit(item)" clear><ion-icon ios="ios-create" md="md-create"></ion-icon></button>
+                        <br>
+                        <br>
+                        <button id="del" ion-button color="danger" (click)="delete(item)" clear><ion-icon ios="ios-trash" md="md-trash"></ion-icon></button>
+                    </ion-item-options>
+                  </ion-item-sliding>
+                </ion-list>
+              </td>
+            </tr>
+
+          
+
+          </tbody>
+
+        </table>
+
         <ion-fab right bottom>
-            <button ion-fab color="secondary"><ion-icon name="md-add"></ion-icon></button>
+            <button ion-fab color="secondary" (click)="newUser()"><ion-icon name="md-add"></ion-icon></button>
         </ion-fab>
   
     </div>
+
+     
+
+
   
     <div id="control">
         <ion-list no-lines>
