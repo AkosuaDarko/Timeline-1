@@ -6,11 +6,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ProjectModalPage } from '../pages/project-modal/project-modal';
+import { EditModalPage } from '../pages/edit-modal/edit-modal';
+import { DeletePage } from '../pages/delete/delete';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ProjectModalPage,
+    DeletePage,
+    EditModalPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +26,11 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ProjectModalPage,
+    DeletePage,
+    EditModalPage
+
   ],
   providers: [
     StatusBar,

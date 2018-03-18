@@ -21,7 +21,7 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
+$modal-inset-width:300px;
 
 
 
@@ -52,7 +52,10 @@ $colors: (
 
 // App Material Design Variables
 // --------------------------------------------------
-// Material Design only Sass variables can go here
+//Material Design only Sass variables can go here
+$modal-inset-box-shadow-color:rgba(25, 40, 70, .8);
+
+
 
 
 

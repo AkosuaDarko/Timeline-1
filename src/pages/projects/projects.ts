@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,ModalController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { AdminHomePage } from '../admin-home/admin-home';
 import { UsersPage } from '../users/users';
 import { TeamsPage } from '../teams/teams';
+import { ProjectModalPage } from '../project-modal/project-modal';
+import { EditModalPage } from '../edit-modal/edit-modal';
+import { DeletePage } from '../delete/delete';
+
 
 /**
  * Generated class for the ProjectsPage page.
@@ -19,8 +23,24 @@ import { TeamsPage } from '../teams/teams';
 })
 export class ProjectsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController) {
   }
+
+  presentProfileModal() {
+    let profileModal = this.modalCtrl.create(ProjectModalPage);
+    profileModal.present();
+ 
+ }
+ editModal() {
+  let profileModal = this.modalCtrl.create(EditModalPage);
+  profileModal.present();
+
+}
+deleteModal() {
+  let profileModal = this.modalCtrl.create(DeletePage);
+  profileModal.present();
+
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProjectsPage');

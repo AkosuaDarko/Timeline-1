@@ -34,11 +34,26 @@ page-projects {
         margin-top:7%;
     }
 
-    #content {
-        background-color: red;
+    #content {        
         height: 100%;
         width: 80%;
-        position: fixed;
+        position: absolute;
         right: 0%;
+
+
     }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {background-color: #f2f2f2;
+    }
+
+    
+
 }

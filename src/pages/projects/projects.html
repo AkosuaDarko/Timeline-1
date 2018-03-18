@@ -30,7 +30,8 @@
               </ion-col>
             </ion-row>
           </ion-grid>
-  
+
+          
      
       
         
@@ -41,8 +42,79 @@
   
   <ion-content>
     <div id="content">
+            <!-- <ion-grid>
+                    <ion-row>
+                      <ion-col col-12 col-sm>
+                        1 of 4
+                      </ion-col>
+                      <ion-col col-12 col-sm>
+                        2 of 4
+                      </ion-col>
+                      <ion-col col-12 col-sm>
+                        3 of 4
+                      </ion-col>
+                      <ion-col col-12 col-sm>
+                        4 of 4
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>   -->
+
+                  
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Project</th>
+            <th>Owner</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Team</th>
+            <th>Status</th>
+            <th>d </th>
+            <th> d</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <!-- <ion-list>
+                <ion-item-sliding>
+                    <ion-item> -->
+                        <td>1</td>
+                        <td>Griffin</td>
+                        <td>Pete</td>
+                        <td>12/03/19</td>
+                        <td>12/09/19</td>
+                        <td>Griff</td>
+                        <td>Acttive</td>
+                        <td><button ion-button icon-only clear (click)="editModal()">
+                                <ion-icon name="md-create"></ion-icon>
+                              </button>
+                        </td>
+                        <td><button ion-button icon-only clear (click)="deleteModal()">
+                                <ion-icon name="md-trash"></ion-icon>
+                              </button></td>
+                    <!-- </ion-item>
+                    <ion-item-options side="right">
+                        <button ion-button color="primary">
+                        <ion-icon name="edit"></ion-icon>
+                        Edit
+                        </button>
+                        <button ion-button color="secondary">
+                          <ion-icon name="delete"></ion-icon>
+                          Delete
+                        </button>
+                    </ion-item-options>
+                </ion-item-sliding>
+            </ion-list> -->
+        </tr>
+    </tbody>
+</table>
         <ion-fab right bottom>
-            <button ion-fab color="secondary"><ion-icon name="md-add"></ion-icon></button>
+
+            <button ion-fab color="secondary" (click)="presentProfileModal()"><ion-icon name="md-add"></ion-icon></button>
+
+            
         </ion-fab>
   
     </div>
