@@ -21,7 +21,7 @@ export class HomePage {
    presentToast(){
     let toast = this.toastCtrl.create({
       message: 'Log in successful',
-      duration: 3000
+      // duration: 3000
     });
     toast.present();
   }
